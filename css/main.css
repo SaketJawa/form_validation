@@ -1,0 +1,203 @@
+/* Code is arranged from biggest parent to smalest child */
+
+/* Wrapper class decides a max-width for teh store*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.desktop ul{
+    background-color: rgb(208, 220, 209);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.desktop ul a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(125, 89, 89);
+    text-decoration: none;
+    background-color: rgb(208, 220, 209);
+}
+
+.desktop ul a li {
+    height: 3rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop ul li:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.container{
+    width: 90%;
+    max-width: 35rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+fieldset{
+    border-color: rgb(192, 192, 192, 0.3);
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 3rem;
+}
+
+legend{
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-size: xx-large;
+    padding: 1rem;
+    border: 1px solid;
+    background-color: white;
+    border-color: rgb(192, 192, 192);
+
+}
+
+input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+#submit{
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: rgb(60, 124, 235);
+    border: 0;
+    border-radius: 4px;
+}
+
+footer{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.company_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 25em) {
+
+    body{
+        font-size: 1.5rem;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 60rem;
+    }
+
+    .name_email{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #fn{
+        width: 25rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #email{
+        width: 25rem;
+        
+    }
+
+    #submit{
+        width: 10rem;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 40em) {
+
+    body{
+        font-size: 1.5rem;
+    }
+
+    .wrapper{
+        width: 80%;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 60rem;
+    }
+
+    .name_email{
+        display: flex;
+    }
+
+    #fn{
+        width: 28rem;
+
+    }
+
+    #email{
+        width: 28rem;
+    }
+
+    #submit{
+        width: 10rem;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
