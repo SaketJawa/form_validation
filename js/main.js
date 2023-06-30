@@ -34,9 +34,9 @@ function validateForm(event) {
     }
 
     if (error.length > 0) {
-        console.error('Form errors:', error );
+        console.error('Errors:', error );
     } else {
-        console.log('Form data:', form_data);
+        console.log('Your Data:', form_data);
         fullname.value = '';
         email.value = '';
         message.value = '';
